@@ -1,6 +1,6 @@
+import twElements from 'tw-elements/dist/plugin'; // Import the plugin
 
-
-module.exports = {
+export default {
   content: [
     './src/**/*.{html,js,jsx,ts,tsx}', // Include paths where Tailwind should look for classes
     './node_modules/tw-elements/dist/js/**/*.js', // Add tw-elements paths
@@ -9,6 +9,6 @@ module.exports = {
     extend: {},
   },
   plugins: [
-    require('tw-elements/dist/plugin'), // Ensure this plugin is loaded
+    twElements, // Use the imported plugin
   ],
 };

@@ -52,7 +52,6 @@ function ChangePassword() {
             ref.current.complete();
             navigate('/');
         } catch (error) {
-            console.error('Change Password Error:', error.response ? error.response.data : error.message);
             ref.current.complete();
             toast.error(error.response?.data?.message || 'Failed to change password');
         }
